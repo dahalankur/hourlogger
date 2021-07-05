@@ -713,8 +713,8 @@
                                 <rect key="frame" x="330" y="249" width="164" height="28"/>
                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="j4o-HR-RRp">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="647165266.49077797">
-                                        <!--2021-07-05 08:07:46 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="647194616.48277998">
+                                        <!--2021-07-05 16:16:56 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -740,18 +740,8 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oPn-3n-dZ4">
-                                <rect key="frame" x="189" y="13" width="103" height="32"/>
-                                <buttonCell key="cell" type="push" title="Save Hours" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3qy-ah-CIG">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="saveHours:" target="XfG-lQ-9wD" id="Zd0-8Z-awO"/>
-                                </connections>
-                            </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ku7-gi-Fkq">
-                                <rect key="frame" x="377" y="13" width="103" height="32"/>
+                                <rect key="frame" x="241" y="13" width="103" height="32"/>
                                 <buttonCell key="cell" type="push" title="View Hours" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="y0O-OW-s4d">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -772,8 +762,8 @@
                                 <rect key="frame" x="330" y="217" width="164" height="28"/>
                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="hWy-41-tgr">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="647165266.49741304">
-                                        <!--2021-07-05 08:07:46 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="647194616.48598099">
+                                        <!--2021-07-05 16:16:56 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -788,33 +778,55 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oPn-3n-dZ4">
+                                <rect key="frame" x="113" y="13" width="103" height="32"/>
+                                <buttonCell key="cell" type="push" title="Save Hours" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3qy-ah-CIG">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="saveHours:" target="XfG-lQ-9wD" id="Zd0-8Z-awO"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="COB-8T-kGr">
+                                <rect key="frame" x="370" y="13" width="113" height="32"/>
+                                <buttonCell key="cell" type="push" title="Delete Hours" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OC9-1U-ScX">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="deleteHours:" target="XfG-lQ-9wD" id="aJI-MA-8aD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="QNS-3d-qPN" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="52" id="3sY-Nf-Qox"/>
                             <constraint firstItem="JYj-MB-UFj" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="116" id="55i-3c-nHM"/>
-                            <constraint firstAttribute="bottom" secondItem="Ku7-gi-Fkq" secondAttribute="bottom" constant="20" symbolic="YES" id="56Z-Ux-6hd"/>
                             <constraint firstItem="JYj-MB-UFj" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="30" id="D5k-m0-HvS"/>
+                            <constraint firstAttribute="bottom" secondItem="COB-8T-kGr" secondAttribute="bottom" constant="20" symbolic="YES" id="D63-cm-Sh7"/>
+                            <constraint firstAttribute="trailing" secondItem="COB-8T-kGr" secondAttribute="trailing" constant="109" id="DVJ-45-bXI"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JYj-MB-UFj" secondAttribute="trailing" constant="20" symbolic="YES" id="Efv-Rk-zNy"/>
                             <constraint firstItem="uDT-Dt-Zlz" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="295" id="G86-b6-mMK"/>
                             <constraint firstItem="7uv-vK-v2t" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="Jia-IZ-Djj"/>
                             <constraint firstAttribute="bottom" secondItem="7uv-vK-v2t" secondAttribute="bottom" constant="62" id="Nhg-2a-vUc"/>
                             <constraint firstItem="IDn-Ca-Agk" firstAttribute="top" secondItem="QNS-3d-qPN" secondAttribute="bottom" constant="8" symbolic="YES" id="QcW-Mf-crf"/>
-                            <constraint firstAttribute="trailing" secondItem="Ku7-gi-Fkq" secondAttribute="trailing" constant="112" id="RrZ-Mi-y7i"/>
                             <constraint firstItem="pw5-D6-wcB" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="288" id="Ruh-jV-MR3"/>
                             <constraint firstItem="7uv-vK-v2t" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="140" id="SWD-bf-ydj"/>
-                            <constraint firstItem="Ku7-gi-Fkq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oPn-3n-dZ4" secondAttribute="trailing" constant="12" symbolic="YES" id="UVs-lg-4Sp"/>
+                            <constraint firstItem="Ku7-gi-Fkq" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="248" id="U2y-hw-uGB"/>
+                            <constraint firstItem="oPn-3n-dZ4" firstAttribute="baseline" secondItem="COB-8T-kGr" secondAttribute="baseline" id="ULl-EI-Zr6"/>
                             <constraint firstItem="QNS-3d-qPN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pw5-D6-wcB" secondAttribute="trailing" constant="8" symbolic="YES" id="WcU-TT-mbr"/>
-                            <constraint firstAttribute="bottom" secondItem="oPn-3n-dZ4" secondAttribute="bottom" constant="20" symbolic="YES" id="cVP-fq-dXy"/>
+                            <constraint firstItem="Ku7-gi-Fkq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oPn-3n-dZ4" secondAttribute="trailing" symbolic="YES" id="bO2-K3-IRX"/>
+                            <constraint firstItem="oPn-3n-dZ4" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="120" id="ecl-Mo-JHf"/>
+                            <constraint firstItem="COB-8T-kGr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ku7-gi-Fkq" secondAttribute="trailing" constant="12" symbolic="YES" id="lug-0T-7dd"/>
                             <constraint firstItem="IDn-Ca-Agk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uDT-Dt-Zlz" secondAttribute="trailing" constant="8" symbolic="YES" id="n1A-pF-cn5"/>
                             <constraint firstItem="uDT-Dt-Zlz" firstAttribute="top" secondItem="pw5-D6-wcB" secondAttribute="bottom" constant="16" id="nLw-Qr-5vC"/>
                             <constraint firstAttribute="trailing" secondItem="IDn-Ca-Agk" secondAttribute="trailing" constant="94" id="nYZ-1n-0sb"/>
                             <constraint firstItem="IDn-Ca-Agk" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="84" id="qh7-N2-fM8"/>
                             <constraint firstAttribute="trailing" secondItem="QNS-3d-qPN" secondAttribute="trailing" constant="94" id="rQ9-tj-Yla"/>
-                            <constraint firstItem="oPn-3n-dZ4" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="196" id="sbU-hW-bDg"/>
                             <constraint firstAttribute="trailing" secondItem="7uv-vK-v2t" secondAttribute="trailing" constant="39" id="skm-3H-28b"/>
                             <constraint firstItem="7uv-vK-v2t" firstAttribute="top" secondItem="JYj-MB-UFj" secondAttribute="bottom" constant="8" symbolic="YES" id="t2e-Tl-axn"/>
                             <constraint firstItem="pw5-D6-wcB" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="56" id="tzt-rE-xxj"/>
-                            <constraint firstItem="oPn-3n-dZ4" firstAttribute="top" secondItem="7uv-vK-v2t" secondAttribute="bottom" constant="22" id="u9N-Ps-que"/>
+                            <constraint firstItem="oPn-3n-dZ4" firstAttribute="baseline" secondItem="Ku7-gi-Fkq" secondAttribute="baseline" id="zm6-Q9-2cg"/>
                         </constraints>
                     </view>
                     <connections>
@@ -825,7 +837,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="682.5"/>
+            <point key="canvasLocation" x="74.5" y="682.5"/>
         </scene>
     </scenes>
 </document>

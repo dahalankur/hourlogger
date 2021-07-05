@@ -137,5 +137,46 @@ class ViewController: NSViewController {
             showAlert(alert: createAlert(msg: "File Does Not Exist", button: "Got It", style: "critical", info: "There are no stored records found. Please add your hours to start logging."), message: "Done.")
         }
     }
+    
+    func deleteFile() -> Void {
+        do {
+            let file_manager = FileManager()
+            try file_manager.removeItem(at: filename)
+        } catch {
+            print("ERROR: Cannot delete file: \(error)")
+        }
+        print("Deleted")
+    }
+    
+    @IBAction func deleteHours(_ sender: Any) {
+        let alert = NSAlert()
+        alert.messageText = "Confirm Delete?"
+        alert.informativeText = "Are you sure you want to delete all logged hours?"
+        alert.addButton(withTitle: "Confirm")
+        alert.addButton(withTitle: "Cancel")
+        alert.alertStyle = .critical
+        var w: NSWindow?
+        if let window = view.window{
+            w = window
+        }
+        else if let window = NSApplication.shared.windows.first{
+            w = window
+        }
+        if let window = w{
+            alert.beginSheetModal(for: window){ (modalResponse) in
+                if modalResponse == .alertFirstButtonReturn {
+                    // confirm delete the records
+                    if self.fileDoesExist(file: self.filename.path) {
+                        self.deleteFile()
+                    }
+                } else if modalResponse == .alertSecondButtonReturn {
+                    print("Canceled")
+                }
+            }
+        }
+
+    }
+    
+    
 }
 
